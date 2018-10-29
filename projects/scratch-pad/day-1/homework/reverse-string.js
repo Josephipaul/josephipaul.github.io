@@ -22,8 +22,10 @@
 function reverseString(input) {
     // YOUR CODE GOES BELOW HERE //
     
-    
-    
+  var splitString = input.split('');
+  var reverseArray = splitString.reverse(); 
+  var joinArray = reverseArray.join('');
+  return joinArray;
     
     // YOUR CODE GOES ABOVE HERE //
 }

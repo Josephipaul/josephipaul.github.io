@@ -33,3 +33,24 @@ console.log(myName); // prints => bob
 var myVariable = 1;
 var myVariable = true;
 myVariable = "someString";
+
+// 4. var, let, and const 
+// var can be reassigned, global and local scoped
+// let can be reassigned, and is block scoped
+let letVar = 2; // prints => 2
+// const can NOT be reassigned and block scoped
+const constVar = 3; // prints => 3
+
+// 5. hoisting
+// - variable and function declaration
+// - taken to the top of their scopes
+// - different types hoisted differently
+   // - variables: Only name
+    // - functions: Name and body
+// Happens at runtime
+
+function functionName() {
+    if (name === undefined)
+    name = 'Isaak';
+}
+var name;

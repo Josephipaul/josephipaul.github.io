@@ -23,12 +23,21 @@
  */
 function range(start, end) {
     // YOUR CODE GOES BELOW HERE //
+    var myRange = [];
     
-    
-    
+    if (start < end) {
+        for (var i = start; i <= end; i++) {
+            myRange.push(i);
+        } return myRange;
+    } else if (start > end) {
+        for (var i = end; i <= start; i++) {
+            myRange.unshift(i);
+            }
+        } return myRange;
+    }
     
     // YOUR CODE GOES ABOVE HERE //
-}
+
 
 
 
